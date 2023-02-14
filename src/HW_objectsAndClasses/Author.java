@@ -11,10 +11,14 @@ public class Author {
     }
 
     public String getFirstName() {
-        return this.firstName;
+        return firstName;
     }
 
     public String getLasttName() {
-        return this.lastName;
+        return lastName;
+    }
+
+    public String toString() {
+        return "Имя " + firstName + " фамилия " + lastName;
     }
 }

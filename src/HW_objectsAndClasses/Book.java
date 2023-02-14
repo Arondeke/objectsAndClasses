@@ -27,4 +27,8 @@ public class Book {
     public int getYear() {
         return this.year;
     }
+
+    public String toString() {
+        return "название " + this.name + " автор " + this.authorOfBook + "год издания" + this.year;
+    }
 }
