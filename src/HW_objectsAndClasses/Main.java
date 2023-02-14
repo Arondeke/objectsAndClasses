@@ -3,6 +3,8 @@ package HW_objectsAndClasses;
 import org.w3c.dom.ls.LSOutput;
 
 public class Main {
+
+    int test = 2;
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
