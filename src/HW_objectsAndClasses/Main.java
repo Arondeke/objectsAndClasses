@@ -3,9 +3,6 @@ package HW_objectsAndClasses;
 import org.w3c.dom.ls.LSOutput;
 
 public class Main {
-
-    int test = 3;
-    int test2 = 4;
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
@@ -25,6 +22,5 @@ public class Main {
         System.out.println(authorOfBookMayakOnnsky);
 
     }
-
 
 }
