@@ -1,6 +1,20 @@
 package HW_objectsAndClasses;
 
+import java.util.Objects;
+
 public class Author {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return firstName.equals(author.firstName) && lastName.equals(author.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
+    }
 
     private String firstName;
     private String lastName;
@@ -11,10 +25,14 @@ public class Author {
     }
 
     public String getFirstName() {
-        return this.firstName;
+        return firstName;
     }
 
     public String getLasttName() {
-        return this.lastName;
+        return lastName;
+    }
+
+    public String toString() {
+        return "Имя " + firstName + " фамилия " + lastName;
     }
 }
