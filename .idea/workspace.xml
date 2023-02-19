@@ -102,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676661305471</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="немного переделал, добавил счётчик на ИД и код отдела">
+      <created>1676799744145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676799744145</updated>
+    </task>
+    <task id="LOCAL-00008" summary="...">
+      <created>1676799856923</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676799856923</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +128,8 @@
     <MESSAGE value="сделал toString" />
     <MESSAGE value="сделал hashCode" />
     <MESSAGE value="что-то сделал. посмотрите что не так)" />
-    <option name="LAST_COMMIT_MESSAGE" value="что-то сделал. посмотрите что не так)" />
+    <MESSAGE value="немного переделал, добавил счётчик на ИД и код отдела" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>

@@ -9,11 +9,12 @@ public class Employee {
     private int dept;
     private static int countID;
 
-    public Employee(String firstName, String middleName, String lastName, float salary) {
+    public Employee(String firstName, String middleName, String lastName, int dept, float salary) {
         //this(firstName, middleName, lastName, salary, 0);
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
+        this.dept = dept;
         this.salary = salary;
         this.id = countID;
         countID++;
@@ -22,7 +23,6 @@ public class Employee {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
     public String getFirstName() {
         return firstName;
     }
@@ -30,7 +30,6 @@ public class Employee {
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
-
     public String getMiddleName() {
         return middleName;
     }
@@ -38,7 +37,6 @@ public class Employee {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
     public String getLastName() {
         return lastName;
     }
@@ -46,7 +44,6 @@ public class Employee {
     public void setSalary(float salary) {
         this.salary = salary;
     }
-
     public float getSalary() {
         return salary;
     }
@@ -54,7 +51,6 @@ public class Employee {
     public void setDept(int dept) {
         this.dept = dept;
     }
-
     public int getDept() {
         return dept;
     }
