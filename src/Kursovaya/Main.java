@@ -16,51 +16,6 @@ public class Main {
         Employee operator = new Employee("Даниил", "Петрович", "Хочуспатов", 25000);
 
 //делаю много человек в мало отделов (не знаю как сделать гармоничней если 100 человек в 4 отделах например)
-        int i = 0;
-        byte[] arrID = new byte[5];
-        for (; i <= arrID.length; ) {
-            secretary.setID(i);
-            System.out.println(secretary.getID());
-            i++;
-
-            financier.setID(i);
-            System.out.println(financier.getID());
-            i++;
-
-            engineer.setID(i);
-            System.out.println(engineer.getID());
-            i++;
-
-            cleaner.setID(i);
-            System.out.println(cleaner.getID());
-            i++;
-
-            director.setID(i);
-            System.out.println(director.getID());
-            i++;
-
-            security.setID(i);
-            System.out.println(security.getID());
-            i--;
-
-            courier.setID(i);
-            System.out.println(courier.getID());
-            i--;
-
-            masterIT.setID(i);
-            System.out.println(masterIT.getID());
-            i--;
-
-            manager.setID(i);
-            System.out.println(manager.getID());
-            i--;
-
-            operator.setID(i);
-            System.out.println(operator.getID());
-            i--;
-            break;
-        }
-
 
         Employee[] baseEmployee = new Employee[10];
 
@@ -75,7 +30,11 @@ public class Main {
         baseEmployee[8] = manager;
         baseEmployee[9] = operator;
 
-        for (int j = 0; j < baseEmployee.length; ) {
+        System.out.println(director.getID());
+
+        for (
+                int j = 0;
+                j < baseEmployee.length; ) {
             System.out.println(baseEmployee[j]);
             j++;
         }

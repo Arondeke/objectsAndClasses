@@ -6,6 +6,8 @@ public class Employee {
     private String lastName;
     private float salary;
     private int id;
+    private int dept;
+    private static int countID;
 
     public Employee(String firstName, String middleName, String lastName, float salary) {
         //this(firstName, middleName, lastName, salary, 0);
@@ -13,39 +15,55 @@ public class Employee {
         this.middleName = middleName;
         this.lastName = lastName;
         this.salary = salary;
-        this.id = 0;
+        this.id = countID;
+        countID++;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getFirstName() {
-        return this.firstName;
+        return firstName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     public String getMiddleName() {
-        return this.middleName;
+        return middleName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getLastName() {
-        return this.lastName;
-    }
-
-    public float getSalary() {
-        return this.salary;
-    }
-
-    public int getID() {
-        return this.id;
+        return lastName;
     }
 
     public void setSalary(float salary) {
         this.salary = salary;
     }
 
-    public void setID(int id) {
-        this.id = id;
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setDept(int dept) {
+        this.dept = dept;
+    }
+
+    public int getDept() {
+        return dept;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String toString() {
         return "Имя " + firstName + " Отчество " + middleName + " фамилия " + lastName;
     }
-
 }
