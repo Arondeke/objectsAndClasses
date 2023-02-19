@@ -30,7 +30,6 @@ public class Main {
         baseEmployee[8] = manager;
         baseEmployee[9] = operator;
 
-        System.out.println(director.getID());
 
         for (
                 int j = 0;
