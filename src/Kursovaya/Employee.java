@@ -60,6 +60,6 @@ public class Employee {
     }
 
     public String toString() {
-        return "Имя " + firstName + " Отчество " + middleName + " фамилия " + lastName;
+        return "Имя " + firstName + " Отчество " + middleName + " фамилия " + lastName + " отдел " + dept + " ЗП " + salary;
     }
 }
