@@ -2,6 +2,41 @@ package Kursovaya;
 
 public class Main {
 
+    static Employee[] baseEmployee = new Employee[10];
+
+    private static float countTotalSalary(Employee[] baseEmployee) {
+        float totalSalary = 0;
+        for (int i = 0; i < baseEmployee.length; ) {
+            totalSalary = totalSalary + baseEmployee[i].getSalary();
+            i++;
+        }
+        return totalSalary;
+    }
+
+    private static float countAverageSalary(float totalSalary) {
+        float salaryAverage = 0;
+        salaryAverage = totalSalary / baseEmployee.length;
+        return salaryAverage;
+    }
+
+    private static float countMinSalary(Employee[] baseEmployee) {
+        float minimumSalary = 100_000;
+        for (int i = 0; i < baseEmployee.length; ) {
+            minimumSalary = Math.min(baseEmployee[i].getSalary(), minimumSalary);
+            i++;
+        }
+        return minimumSalary;
+    }
+
+    private static float countMaxSalary(Employee[] baseEmployee) {
+        float maximumSalary = 0;
+        for (int i = 0; i < baseEmployee.length; ) {
+            maximumSalary = Math.max(baseEmployee[i].getSalary(), maximumSalary);
+            i++;
+        }
+        return maximumSalary;
+    }
+
     public static void main(String[] args) {
 
         Employee secretary = new Employee("Ирина", "Ивановна", "Кофеева", 1, 21_000);
@@ -15,10 +50,6 @@ public class Main {
         Employee manager = new Employee("Михаил", "Алексеевич", "Балаболов", 5, 29_000);
         Employee operator = new Employee("Даниил", "Петрович", "Хочуспатов", 5, 30_000);
 
-//делаю много человек в мало отделов (не знаю как сделать гармоничней если 100 человек в 4 отделах например)
-
-        Employee[] baseEmployee = new Employee[10];
-
         baseEmployee[0] = secretary;
         baseEmployee[1] = financier;
         baseEmployee[2] = engineer;
@@ -30,34 +61,16 @@ public class Main {
         baseEmployee[8] = manager;
         baseEmployee[9] = operator;
 
-        float totalSalary = 0;
-        float totalSalaryAverage = 0;
-        float maximumSalary = 0;
-        float minimuSalary = 100000;
+        float totalSalary = countTotalSalary(baseEmployee);
+        System.out.println("Сумма ЗП: " + totalSalary);
 
-        for (
-                int j = 0; j < baseEmployee.length; ) {
-            System.out.println(baseEmployee[j]);
-            totalSalary = totalSalary + baseEmployee[j].getSalary();
-            totalSalaryAverage = totalSalary / baseEmployee.length;
-//максимальную нашёл таким способом
-            if (baseEmployee[j].getSalary() > maximumSalary) {
-                maximumSalary = baseEmployee[j].getSalary();
-            }
-//минимальную нашёл таким способом
-            minimuSalary = Math.min(baseEmployee[j].getSalary(), minimuSalary);
-            //if (baseEmployee[j].getSalary() < minimuSalary) {
-            //    minimuSalary = baseEmployee[j].getSalary();
-            // }
-            System.out.println(baseEmployee[j].getFirstName() + " " + baseEmployee[j].getMiddleName() + " " + baseEmployee[j].getLastName());
-            j++;
+        float salaryAverage = countAverageSalary(totalSalary);
+        System.out.println("Средняя ЗП: " + salaryAverage);
 
-        }
-        System.out.println();
+        float minimumSalary = countMinSalary(baseEmployee);
+        System.out.println("Минимальная ЗП: " + minimumSalary);
 
-        System.out.println("Затраты на ЗП: " + totalSalary);
-        System.out.println("Средняя ЗП: " + totalSalaryAverage);
+        float maximumSalary = countMaxSalary(baseEmployee);
         System.out.println("Максимальная ЗП: " + maximumSalary);
-        System.out.println("Минимальная ЗП: " + minimuSalary);
     }
 }
