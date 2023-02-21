@@ -6,9 +6,8 @@ public class Main {
 
     private static float countTotalSalary(Employee[] baseEmployee) {
         float totalSalary = 0;
-        for (int i = 0; i < baseEmployee.length; ) {
+        for (int i = 0; i < baseEmployee.length; i++) {
             totalSalary = totalSalary + baseEmployee[i].getSalary();
-            i++;
         }
         return totalSalary;
     }
@@ -21,18 +20,16 @@ public class Main {
 
     private static float countMinSalary(Employee[] baseEmployee) {
         float minimumSalary = 100_000;
-        for (int i = 0; i < baseEmployee.length; ) {
+        for (int i = 0; i < baseEmployee.length; i++) {
             minimumSalary = Math.min(baseEmployee[i].getSalary(), minimumSalary);
-            i++;
         }
         return minimumSalary;
     }
 
     private static float countMaxSalary(Employee[] baseEmployee) {
         float maximumSalary = 0;
-        for (int i = 0; i < baseEmployee.length; ) {
+        for (int i = 0; i < baseEmployee.length; i++) {
             maximumSalary = Math.max(baseEmployee[i].getSalary(), maximumSalary);
-            i++;
         }
         return maximumSalary;
     }

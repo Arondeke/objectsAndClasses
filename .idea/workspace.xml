@@ -136,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676811584401</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Всё ок?">
+      <created>1676927232871</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676927232871</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +159,7 @@
     <MESSAGE value="создал поле отдел, в конструкторе вдвю ему значения" />
     <MESSAGE value="..." />
     <MESSAGE value="вроде сделал" />
-    <option name="LAST_COMMIT_MESSAGE" value="вроде сделал" />
+    <MESSAGE value="Всё ок?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Всё ок?" />
   </component>
 </project>
